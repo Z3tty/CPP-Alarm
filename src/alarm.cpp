@@ -24,7 +24,7 @@
 			struct tm *tm_now = localtime(&time);
 			if((tm_alarm.h)		<=		(tm_now->tm_hour)			&&
 			   (tm_alarm.m)		<=		(tm_now->tm_min)			&&
-			   (tm_alarm.s)		<=		(tm_now->tm_min)) {
+			   (tm_alarm.s)		<=		(tm_now->tm_sec)) {
 				::PlaySound("Path\\To\\Alarm\\Sound", NULL, SND_FILENAME | SND_LOOP);
 				alarm = true;
 				for(int i = 0; i < 100000; i++) printf("ALARM\t ALARM\t ALARM\t ALARM\t ALARM");
