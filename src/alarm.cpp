@@ -25,7 +25,7 @@
 			if((tm_alarm.h)		<=		(tm_now->tm_hour)			&&
 			   (tm_alarm.m)		<=		(tm_now->tm_min)			&&
 			   (tm_alarm.s)		<=		(tm_now->tm_sec)) {
-				::PlaySound("Path\\To\\Alarm\\Sound", NULL, SND_FILENAME | SND_LOOP);
+				::PlaySound("Invalid link for BOING sound, replace with a link for custom music", NULL, SND_FILENAME | SND_LOOP | SND_ASYNC);
 				alarm = true;
 				for(int i = 0; i < 100000; i++) printf("ALARM\t ALARM\t ALARM\t ALARM\t ALARM");
 			}
